@@ -1,53 +1,69 @@
 # Astro Project
 
-A simple Astro site using Tailwind CSS via the Vite plugin.
+A starter Astro site built with Astro v5 and Tailwind CSS using the official Vite plugin.
 
-## 🚀 Overview
+## 🚀 Project overview
 
-This project was created with Astro and includes:
-- Astro pages, layouts, and components
-- Tailwind CSS support via `@tailwindcss/vite`
-- A modern Vite-based build pipeline
+This repository includes a lightweight Astro-based website with:
+- Astro page routing and layouts
+- Reusable components in `src/components`
+- Global styles in `src/styles`
+- Tailwind CSS integration through `@tailwindcss/vite`
+- A Vite-powered dev and build workflow
 
-## 📁 Project structure
+## 🧩 Project structure
 
 ```text
-/
-├── public/             Static assets served at root
-├── src/
-│   ├── assets/         Images and media
-│   ├── components/     Reusable UI components
-│   ├── layouts/        Page layout wrappers
-│   └── pages/          Astro route pages
-├── astro.config.mjs    Astro configuration
-└── package.json        Project metadata and scripts
+astro.config.mjs        Astro configuration
+package.json            Project metadata and scripts
+pnpm-lock.yaml          Lockfile for pnpm dependencies
+public/                 Static files served at the site root
+src/
+  assets/               Images and media assets
+  components/           Reusable UI components
+  layouts/              Layout wrappers for pages
+  pages/                Astro route pages
+  styles/               Global and component CSS
 ```
 
-## 🧞 Scripts
+## ⚙️ Requirements
 
-Run these commands from the project root.
+- Node.js 18 or later
+- `pnpm` package manager
 
-| Command | Action |
-| :------ | :----- |
-| `pnpm install` | Install dependencies |
-| `pnpm dev` | Start the local development server |
-| `pnpm build` | Build the production site |
-| `pnpm preview` | Preview the production build locally |
+## 🚀 Getting started
+
+Install dependencies:
+
+```sh
+pnpm install
+```
+
+Start the local development server:
+
+```sh
+pnpm dev
+```
+
+Open `http://localhost:4321` in your browser to view the site.
+
+## 🛠️ Available scripts
+
+| Command | Description |
+| --- | --- |
+| `pnpm dev` | Run Astro in development mode |
+| `pnpm build` | Build the production website |
+| `pnpm preview` | Preview the built site locally |
 | `pnpm astro -- --help` | Show Astro CLI help |
 
-## 🔧 Development
+## 📦 Dependencies
 
-1. Install dependencies:
-   ```sh
-   pnpm install
-   ```
-2. Start the dev server:
-   ```sh
-   pnpm dev
-   ```
-3. Open the local site in your browser at `http://localhost:4321`
+- `astro` — framework for building the site
+- `tailwindcss` — utility-first CSS framework
+- `@tailwindcss/vite` — Tailwind integration for Vite
 
-## 📚 Useful links
+## 📚 Resources
 
 - Astro docs: https://docs.astro.build
-- Tailwind CSS plugin: https://github.com/tailwindlabs/tailwindcss/tree/main/packages/vite
+- Tailwind CSS: https://tailwindcss.com
+- Astro + Tailwind guide: https://docs.astro.build/en/guides/integrations-guide/tailwind/
