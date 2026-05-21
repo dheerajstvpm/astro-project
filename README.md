@@ -1,46 +1,53 @@
-# Astro Starter Kit: Basics
+# Astro Project
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+A simple Astro site using Tailwind CSS via the Vite plugin.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Overview
 
-## 🚀 Project Structure
+This project was created with Astro and includes:
+- Astro pages, layouts, and components
+- Tailwind CSS support via `@tailwindcss/vite`
+- A modern Vite-based build pipeline
 
-Inside of your Astro project, you'll see the following folders and files:
+## 📁 Project structure
 
 ```text
 /
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+├── public/             Static assets served at root
+├── src/
+│   ├── assets/         Images and media
+│   ├── components/     Reusable UI components
+│   ├── layouts/        Page layout wrappers
+│   └── pages/          Astro route pages
+├── astro.config.mjs    Astro configuration
+└── package.json        Project metadata and scripts
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🧞 Scripts
 
-## 🧞 Commands
+Run these commands from the project root.
 
-All commands are run from the root of the project, from a terminal:
+| Command | Action |
+| :------ | :----- |
+| `pnpm install` | Install dependencies |
+| `pnpm dev` | Start the local development server |
+| `pnpm build` | Build the production site |
+| `pnpm preview` | Preview the production build locally |
+| `pnpm astro -- --help` | Show Astro CLI help |
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+## 🔧 Development
 
-## 👀 Want to learn more?
+1. Install dependencies:
+   ```sh
+   pnpm install
+   ```
+2. Start the dev server:
+   ```sh
+   pnpm dev
+   ```
+3. Open the local site in your browser at `http://localhost:4321`
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 📚 Useful links
+
+- Astro docs: https://docs.astro.build
+- Tailwind CSS plugin: https://github.com/tailwindlabs/tailwindcss/tree/main/packages/vite
